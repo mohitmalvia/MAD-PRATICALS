@@ -1,0 +1,27 @@
+1.Create "Hello World" application - That will display" Hello World" In the middle of the screen in the red color with white background.
+Activity _main. Xml
+< ?xml version = "1.0" encoding = "Utf-8"?>
+XmIns: app=" http://schemas. android-com/apk/res -auto"
+xmens: tools = "http: // schemas. android. com)toots"
+android: layout -width: "match-parent"
+android: layout - height = " match_ parent"
+tools: context = ".MainActivity">
+< TextView
+android: layout _width = Wrap-content"
+andrid: layout height. " a-cantent"
+android: textcolor = "#FF0000"
+appi layout constraint Bottom toBottom of= "parent"
+app: layout constraint left -toleftof = "parent"
+app: layout constraintRight_ toRightof = "parent"
+app: layout - constraint Top-toTapo = "parent"/>
+</android X. constraint layout. widget. Constraint Layout >
+
+
+
+
+➡Main Activity. Java package com. example. helloworla;
+import android suppost V7 app. AppcompatActivity , import android. os. Bundle>
+public class MainActivity extends ApplompatActivity E
+@override
+protected void on Create (Bundle saved InstanceStael super-Oncreate (Saved Instancestate);
+SetContentviero (R-dayout.activity-main);

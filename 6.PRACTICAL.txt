@@ -1,0 +1,23 @@
+6.Create simple program which show the use of auto complete Text View.
+And XML code:- <?xml version="1.0" encoding="utf-8"?>"
+< Relative layout xmlns:android="http://schemas.android.com /apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+android: layout width="match-parent"
+android: layout. height t="match. parent" tools: Context = "- Auto Complete Activity">
+< Auto Complete TextView android: id ="@+id/autocompleteTextView. android:layout-width=" android:layout-height match-parent" "Wrap-content" android:layout-marginTop="16dp margich orizontal = "16 dp" android: hint = "Type" a country"/>
+</Relative layout>
+
+Java Code
+import android.os.Bundle;
+import android.widget. Array Adapter;
+Import android.widget. AutocompleteTextView;
+import android.appcompat.app.AppCompatActivity;
+public class Auto Complete Activity extends Applompat Activity {
+@override
+protected void oncreate (Bundle savedInstanceState) {
+Super.onCreate(savedInstanceState); Set ContentView(R.layout.activity-auto-complete);
+String 7 countries = "Australia" "Brazil", "Canada", "Germany, "India", "Japan", "vs"y;
+Array Adapter <String> adapter = new Array Adapter <> [this, android. R.layout.simple-dropdown-item-line, countries);
+AutoCompleteTextView autocompleteTextView = findViewById(R.id.auto Complete TextView);
+auto CompleteTextView.setAdapter(adapter);
+}
+}

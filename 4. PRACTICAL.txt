@@ -1,0 +1,44 @@
+4.
+Ans
+Pg. No.:..
+Date :.
+reate An Application that designs a layout with a text Box and Button named submit. Ihe user should enter the text in the text Box. When the submit button is clicked than the text in the text box should be displayed in the toast.
+XML code :-
+≤? xme version ="1-0" encoding = "utt - 8"?>
+< lineardayout xmens: android = "http:// schemas.andraid.com/
+apk/ res/ android"
+android: layout width = " match, parent"
+android: layout-height=" match-parent
+android : orientation = Vertical"
+android: padding = "16dp".
+<editText
+android: id = "@+id /editText"
+android: layout _width = " match _pasent"
+android: Layout _ height = "wrap - content"
+android: hint = " Enter text"/ >
+Button
+andraid: id = "At id/ submitBtn"
+android: Layout width = " wrap -content"
+android: dayout _height = " wrap-content"
+aundroid: text = "Submit" />
+</lineardayout >
+import android 0s. Bundes
+impost android. viero. Vier; import android • widget - Button; import android. widget. EditText; impos android. widget - Toast; import androidx. appcompat - app•App compatActivity; public(lass MainActivity extends App compat Activity E
+@override
+protected void onCreate (Bundle saved Instance state ) E super. ontreate (saved Instance state);
+SetcontentView (Rolayout.activity_main) ;
+final EditText edittext = findView ByTa (R.id• editText);
+Button submitBtn=tindVieByID (R•id - SubmitBtn);
+SubmitBtn •SetonlicKlistener (new View. Onclicklistener() { @override
+public void ondlick(viao vier)s
+string enteredTeXt = editText.getText () • tostring ;
+it (lentered Text. (SEmpty() [
+show Toast (" Entered Text: "+ enteredText);
+y else E
+SKaL ast （please enter text bebre submiting"）3
+3) ;
+子
+private Void show Toast (String message E
+Toast. make tag Text (this, message, ToasT. LENGTH- SHORT •Show));
+}
+}

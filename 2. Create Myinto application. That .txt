@@ -1,0 +1,42 @@
+2. Create Myinto application. That will display your name, qualificatio Contact num, email id and gray All Using Java code. address with background must have different color of above program
+ XML dayout:-
+<?xml version="1.0" encoding="utf-8"?>
+<Relative dayout xmlns:android="http://schema.android.com/
+apk/res/android" android: layout-width="match-parent"
+android:layout- height="match-parent" android: background="#808080">
+<TextView
+android:id="@+id/nameTextview" android:layout width="wrap-content"
+1: layout height="wrap-content" android: android :text="Your name" android: text color="#FFFFFF"
+android:layout marginTop = "20dp"/>
+<TextView
+android:id="@+id/qualificationTextView" android:layout-width="wrap-content" android: layout-height="wrap-content" Your Qualification" android: text = " You android: textcolor="#00FF00" android:layout below = "@id /name Textview" android:layout-marginTop = "20dp" />
+< Textview
+android: id = "@t id/contactTextview "
+android: Layout-Width= " wrap- content" andrais: leyout height " wrap cartent"
+android: textcolor = "#FF0000"
+android: Layout-below="@*id /qualificationTextview"
+androld: layout _margin Top = "2020"/>
+< Textview
+android: id = "@+ id / email Textview"
+android: layout _Width= " wrap -content" android: ayout height "irap-Content" android: textcolor= "#0000FF"
+android: dayout-below="@* id / contactextview"
+android: layout-margintop = "20dp"/>
+< TextView
+android: id= "
+@+ id / addressText View"
+android: textolor = "#FEFF00"
+androld: Layout -below = "@id /email Textviero"
+android: dayaut marginTop = "202p"/>
+</Relativedayout >
+➡Java
+import android • graphics. color; import android. as - Bundle; import android • widget. TextVieo;
+import androids. applompat•app.AppcompatActivity;
+public Class Your InFoActivity extends Applompat Activity é @ override
+protected Vold on reate Bundle savedinstance state) f super. on (reate (saved Instance State ); setcontentView (R. layout. activity -your-info);
+Textvier nameTextriew: FindViewbyIa (R•id-nameTextview);
+Text vier qualification TextView= Findview ByTa (R• id• qualificationText viaw);
+Textview contact Textview = find ViewById (R. id. contactTextview);
+Textview email Textview = find view By Id (Rid. a emailTextview);
+Textview addresstextview= tindVierBy Id (R.id- addresstextvier);
+hame Textview. settextolor (10/or-BLUE);
+qualitication Textview - setTextLolor (Color GREEN); contact Textvie. SetTextcolor (color.RED); email Text view • set Textcolor (color. YELLOW); address Text view. settext Color (color.CYAN);

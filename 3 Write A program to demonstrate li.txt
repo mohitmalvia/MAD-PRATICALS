@@ -1,0 +1,43 @@
+3 Write A program to demonstrate life cycle of activity in android
+Ans
+XML code:-
+<?xml version="1.0" encoding="utf-8"?>
+<linearLayout xmlns:android="http://schemas.android.com/ apk/res/android"
+android:layout-width="match-parent" android: dayout-height="match-parent"
+android: orientation="vertical"
+android: padding = "16 dp">
+<TextView
+android:layout-width="wrap-content" android: Layout - height= "wrap-content"
+android : text = si Hello, Activity Life cycle!" android: textsize = "18sp"/>
+</ linear layout>
+➡JAVA code
+A
+import android.app.Activity; import android.os.Bundle;
+Import android.util.Log;
+public class MainActivity extends Activity {
+private static final string TAG = "ActivityLite Cycle";
+@override
+protected void onCreate(Bundle savedInstanceState) { super.onCreate (savedInstanceState) setContentView(R.layout.activity.main); dogd (TAG, "onCreate");
+override
+protected void onStart(){
+super.onStart(); Log.d (TAG, "onstart");
+@override
+protected void on Resume () {
+super onResume();"); Log'd (TAG, "onResume");
+@override
+protected void on Pause() { Super.onPause(); Log.d(TAG, "onPause");
+@override
+protected void on stop() {
+super-onstop();
+dog. d (TAr, "onstop");
+У
+@override
+protected void onDestroy 0)E super. on Destroy () ;
+dog-d (TAG, " onDestroy");
+У
+•@override
+Restart
+protected void onResume ()S
+super. on Restart (); dogid (TAG, " onRestart");
+}
+}

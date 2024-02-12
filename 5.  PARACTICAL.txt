@@ -1,0 +1,96 @@
+5.
+Create An android Application named "Arithmetic-op" which perform all basic arithmetic operation like addition, substractis, multiplication and division.
+XML Code:-
+Ans
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com /apk/res/android" xmens: tools="http://schemas.android.com/tools" width="match.parent" android:layout-width = "! android: layout-height="match-parent" tools: content="Main Activity">
+<EditText
+android: id d/editTextNuml" ="@+id
+: layout-width="match-parent" android: android:layout-height="wrap-content"
+android: hint = "Enter number!" android: inputType = " number Decimal"
+android: layout marginTop="a0dp" android: layout - margin Horizontal = "20dp"/>
+<EditText
+android:id="@+id/ edit Text Num2"
+android:layout-width="match-parent"
+android:layout-height="wrap-content"
+android: hint="Enter number 2" android: inputType = "number Decimal"
+android: layout margintop = "20dp"
+android:layout-marginHorizontal = "20dp" />
+<Button
+Date
+android:id="@+id/ButtonAdd"
+android: layout-width="" "wrap-content"
+android:layout- height="wrap" "wrap_content" android:layout-below="@id/editText Num?"
+android:layout-marginTop = "20dp""
+android:text="Add""
+android: onclick="performoperation"
+android:layout-margin Horizontal = "20dp" />
+<Button
+android:id="@+id/ Button substract" android:layout-width="wrap-content"
+android: layout - height=" Wrap-Content"
+android:layout below = "@id/button Add"
+android:layout-marginTop="10dp"
+android:text="Substract"
+android: onclick = "perform operation"
+android:layout-margin Horizontal. = 20 dp" />
+<Button
+android:id="@+id/Button Multiply"
+android:layout width="wrap-content" android:layout height = "wrap-content"
+android: layout below = "@id/buttonSubstract"
+android : layout... marginTop="10dp"
+android:text="Multiply"
+android: onclick="performsperation"
+android:layout-margin Horizontal = "20dp" />
+<Button
+
+android:id="@+id/button Divide"
+android:layout-width="wrap-content"
+android: layout - height="wrap-content"
+android:layout below="@id/button Multiply" android:layout-marginTop="10dp"
+android: text = "Divide"
+android: onclick = "perform Operation"
+: layout margin Horizontal = "20dp" /> android:
+<TextView
+android:id="@+id/TextView Result"
+android:layout-width="wrap-content"
+android: layout. height="wrap_content"
+android: layout - below = "@id/button Divide"
+android:layout-marginTop = "20dp"
+android:text=""
+android:layout_margin Horizontal = "20dp" />
+</ Relative layout>
+→
+JAVA Code
+public class MainActivity extends AppCompatActivity {
+EditText numl, num2;
+TextView result;
+@Override
+protected void concreate (Bundle savedInstanceState) {
+super. Oncreate(savedInstanceState); setContentView(R.layout.activity-main);
+num1 = findViewById(R.id.editTextNuml);.
+num2 = findViewById(R.id.editText Num2); id. textView Result); = findViewById(R.id. result =
+public void performOperation (view view) {
+double number! Double. Parse Double(num1.getText().toString());
+double number 2 - Double-Parse Double(num2.getText().toString());
+double answer = 0;
+Switch (view.getId()) {
+Case Rid. button Add:
+answer = numberl + humber2
+break;
+Case R.id.buttonsubstract:
+answer = numberl-number 2
+break;
+Case R.id. button Multiply:
+answer = number 1 x number2;
+break;
+Case Ridan button Divide:
+if (number 2!=0){
+answer = numberl/number 2;
+Y else {
+Toast.makeText(this, "Cannot divide by Zero", Toast.LENGTH
+-SHORT).show();
+return;
+break;
+result. SetText("Result: "+ answer);
+}
+}

@@ -1,0 +1,74 @@
+7.Create Sample application with login module. (check User name and password) on successful login, go to next s And on failing login, alert alert user using Toast. Also pass Username to next screen. to next screen.
+XML code:
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/ap /res/android"
+android:layout Width "match parent" android: layout. height="match parent"
+>
+<TextView)
+android:id="@+id/tuname"
+android:layout-width="wrap_content"
+android : layout-height = "wrap-content"
+android: layout margin start = "21 dp" android:layout_marginTop="49dp"
+android: text = “Username”
+android: textsize = "18 sp" />
+<EditText
+android:id="@+id/ et Username"
+android:layout width="wrap_content" android: layout height = "wrap-content"
+android:layout_align Baseline="@+id/tvName"
+android:layout-alignBottom="@+id/tuName" android: layout align Parent End="true"
+android: layout margin End = "23dp" android: ems="10"
+android: inputType = "textperson Name" />
+<TextView
+android:id="@+id/tupass"
+android:layout-width="wrap.Content" android: layout. height="wrap-content"
+android:layout-align End = "tid/tuName" android: byout-below="@+id/etusername"
+android:layout" marginTop="32dp" Password"
+android:textsize = "18SP"/>
+<EditText
+cundroid:id="@+id/et Password"
+android:layout-width="wrap-content" android: layout-height="wrap-content"
+android: layout - allgen Baseline="@+id/tupall"
+android:layout-alignBottom="@+id/tupass" android:layout - align start = "@+id/etUsername"
+android: ems="10"
+android: inputType = "TextPassword"/>
+<Button
+android:id="@+id/button"
+android:layout_width="wrap_content" android: layout. height=" ="wrap-content"
+android:layout-below="@+id/ expassword" android:layout center Horizontal"="true"
+android:layout marginTop= ="38dp"
+android:text: LOGIN”
+/>
+<TextView
+android:id="@+id/tuloginStatus"
+android:layout-width="" height="wrap. content"
+android: layout. android: layout. "wrap-content"
+android:layout. Center Horizontal="true" android: layout. marginTop="100spe
+</Relative layout>
+
+➡JAVA Code
+package com.example.helloworld;
+import androidx. appcompat.app.AppCompatActivity's ;
+import android.os.Bundle Import android.view.View;
+import android.widget.Button; import android.widget. EditText;
+import android.widget. TextView,
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity & EditText etusemame, et password;
+Button btn status;
+TextView tvloginstatus;
+@override
+protected void onCreate(Bundle savedInstanceState)s super.onCreate(savedInstanceState);
+Set Content View layout.activity main); et username = (EditText) findViewById(R.id. etusername);
+et password = (EditText) Find view byId(R.id. et password), btnStatus = (Button) findViewbyID (R.id.Button);
+tv loginstatus = (TextView) find View byId(R.id.tvinginstatus);
+btn Status, seton clickListener(new View. Indicklistener Of @override
+public void onclick(View v) {
+Check ();
+}
+});
+public void check(){
+if (et username.getText().toString().equals("tonystark") th etpassword.getText().t etprogin status set Text ("login successful) ok
+yelsef
+elsact.makeText(this," login fail", Toast. LENGTH LONG). Show();
+}
+}
+}
